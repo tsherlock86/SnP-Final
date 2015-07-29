@@ -1,0 +1,47 @@
+<% content_for :top do %>
+<%= "Rangers!" %>
+<% end %>
+
+<% @posts.limit(4).each do |post| %>
+<div class="col-xs-8">
+<div class="post-preview">
+  <h2 class="post-title">
+    <%= post.title %>
+  </h2>
+  <h3 class="post-subtitle">
+    <%= post.summary %>
+  </h3>
+  <tr>
+  <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<p class="post-meta">Posted by <a><%=  %></a></p>
+</div>
+<hr/>
+</div>
+<% end %>
+
+<!-- <div class="col-xs-4">
+  <div class="aside"><%= image_tag('logo2.jpg') %></img>
+  <h5>Zack Taylor</h5>
+    <ul class="list-inline">
+    <li class="col-xs-4">Twitter</li>
+    <li class="col-xs-4">Facebook</li>
+    <li class="col-xs-4">Instagram</li>
+  </ul>
+</div>
+  <div class ="aside_image"><%= image_tag('image2.jpg') %></div>
+    <p class="sub-heading">"Looks like it's time to go to work."</p>
+  <p class="filler">Quick-witted and clever, Zack relies on a combination of skill, strength, and agility to win his battles. The original Black Ranger. Whenever he didn't have an arm around Trini or Kimberly, Zack could be found pursuing his attractive, but hard-to-get classmate, Angela. Zack always loved a good joke. </p>
+</div> -->
+
+<% content_for :bottom do %>
+
+  <h3 class="headline">MOST POPULAR POSTS</h3>
+  <div class="row">
+    <div class="col-xs-3">
+      <%=  %>
+      <p class="image_text"><%=  %></p>
+    </div>
+<% end %>

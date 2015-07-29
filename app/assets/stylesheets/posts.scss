@@ -1,0 +1,277 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: grey !important;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+p {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  color: grey !important;
+}
+
+img {
+  margin: 0px;
+  height: 140px;
+  width: 100%;
+  display:inline;
+  overflow: hidden;
+}
+
+ul li{
+  display: inline;
+
+}
+
+h1 {
+  font-size: 1.5em;
+  color: black;
+  margin-top: 0px;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 0px;
+}
+
+h2 {
+  font-style: oblique;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 14px;
+  background-image: url("bg2.jpg");
+  margin-top: 0px !important;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  background-size: cover;
+  color: white;
+  margin-top: 0px;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  color: black;
+}
+
+h4 {
+  margin-left: 10px;
+  margin-top: 160px;
+  font-size: 40px;
+  color: #E4E4E4;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+hr {
+  margin-top: 15px;
+}
+
+.navbar>.container-fluid .navbar-brand {
+  margin-left: -8px !important;
+}
+
+.image_text {
+  position: relative;
+  top: -21px;
+  right: -12px;
+  color: white !important;
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.aside img {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-left: 65px;
+  border-radius: 20px;
+}
+
+.aside_image img {
+  height: 160px;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.filler {
+  width: 80%;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+
+.headline {
+  background-image: url("bg2.jpg");
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-size: cover;
+  height: 50px;
+  font-size: 36px !important;
+  text-align: center;
+}
+
+.sub-heading {
+  text-align: center;
+  color: grey !important;
+  margin-top: 10px;
+}
+
+.container {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 0px;
+  width: 60% !important;
+}
+
+.row {
+  color: #b2b2b2;
+}
+
+.container-fluid {
+  padding: 0px !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+ .jumbotron {
+  background-image: url(image_path('image1.jpg'));
+  background-size: 100%;
+  height: 430px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#about.index .jumbotron {
+  background-image: url(image_path('bg8.jpg'));
+  background-size: 100%;
+  height: 430px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  // min-height: 400px;
+  position: relative;
+}
+
+.navbar {
+    position: absolute !important;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+}
+
+.jumbotron, .container-fluid .jumbotron {
+  padding-left: 0px !important;
+}
+
+.post-subtitle {
+  color: #4c4c4c;
+  font-size: 17px;
+  margin-left: 4px;
+}
+
+.post_header {
+  text-align: center;
+}
+
+.col-xs-3 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 140px;
+}
+
+.col-xs-4 {
+  font-size: 10px !important;
+  padding-right: 0px !important;
+}
+
+.navbar-brand {
+  font-size: 13px !important;
+}
+
+.list-inline ul, li {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footer_title {
+  margin-bottom: 20px;
+}
+
+#nav_top {
+  position: relative;
+  top: -30px;
+}
+
+
+#logo1 {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#headliner {
+  font-size: 40px;
+  line-height: 100%;
+  background-image: url("bg2.jpg");
+  border-radius: 15px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#logo2 {
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  width: 60px;
+}
+
+#logo3 {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#villain {
+  width: 100%;
+
+}

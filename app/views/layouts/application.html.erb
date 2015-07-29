@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title><%= yield(:top) %></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body id="<%= params[:controller] %>" class="<%= params[:action] %>">
+
+    <div class="container-fluid">
+
+      <div class="jumbotron">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand"<%= link_to 'A Morphin Blog', home_path %></a>
+            </div>
+            <div>
+              <ul class="nav navbar-nav">
+              </ul>
+              <ul id="nav_top" class="nav navbar-nav pull-right">
+                <li><a><%= link_to 'About', about_path %></a></li>
+                <li><a><%= link_to 'Search', about_path %></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+      <div class ="container">
+          <div class="row">
+        <%= yield %>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <hr/>
+          <%= yield(:bottom) %>
+          <footer class="footer">
+            <a class="navbar-brand">Zordon Productions, Copyright 2015. All Rights Reserved.</a>
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="http://www.toywiz.com/rangerminis.html">Store</a></li>
+                <li><a href="http://timelife.com/products/power-rangers-from-mighty-morphin-to-lost-galaxy">DVDS</a></li>
+                <li><a href="http://www.letsplaysnes.com/play-mighty-morphin-power-rangers-online/">Video Games</a></li>
+                <li><a href="https://www.80stees.com/collections/mighty-morphin-power-rangers">T-Shirts</a></li>
+              </ul>
+          </div>
+        </footer>
+
+  </body>
+</html>
