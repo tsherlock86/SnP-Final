@@ -1,14 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @author.name %>
-</p>
+<h3 class="list-inline">
+  <strong>Name:</strong> <%= @author.name %> <strong>Bio:</strong> <%= @author.bio %>
+</h3>
 
-<p>
-  <strong>Bio:</strong>
-  <%= @author.bio %>
-</p>
+<% @author.posts.each do |post| %>
+<div class="post-preview">
+
+  <h2 class="post-title">
+    <%= post.title %>
+  </h2>
+  <h3 class="post-subtitle">
+    <%= post.body %>
+  </h3>
+  <h4>
+    <%= post.summary %>
+  </h4>
+<% end %>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>

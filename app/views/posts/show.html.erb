@@ -19,7 +19,7 @@
     <%= @post.summary %>
   </h4>
 </a>
-<p class="post-meta">Posted by <a><%= link_to("#{}", about_path) %></a></p>
+<p class="post-meta">Posted by <a><%= link_to("#{@post.author.name}", about_path) %></a> one <%= @post.created_at.strftime('%B %d, %Y') %></p>
 </div>
 </div>
 <hr/>
