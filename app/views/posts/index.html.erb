@@ -46,11 +46,10 @@
 
   <h3 class="headline">MOST POPULAR POSTS</h3>
   <div class="row">
-      <% @posts.limit(4).each do |post| %>
-
-    <div id="bottomimage1" class="col-xs-3">
-`     <%= image_tag 'image' %>
-      <p class="image_text"><%= %></p>
-    </div>
-    <% end %>
+  <% @posts.limit(4).each do |post| %>
+      <div id="bottomimage1" class="col-xs-3">
+        <%= link_to image_tag(post.author.image), post_path(post.id) %>
+        <p class="image_text"><%=  truncate(post.title, :length => 25) %></p>
+      </div>
+  <% end %>
 <% end %>
