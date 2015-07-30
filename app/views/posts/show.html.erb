@@ -1,25 +1,24 @@
-
 <% content_for :top do %>
 <%= @post.title %>
 <% end %>
 
 <div class="col-md-3 col-sm-3">
-    <img class="img-thumbnail img-responsive photo"><%= image_tag @post.author.image  %></img>
+  <img class="img-thumbnail img-responsive photo"><%= image_tag @post.author.image  %></img>
 
 </div>
 <div class="col-md-9 col-sm-9">
-<div class="post-preview">
-  <h1 class="post-title">
-    <%= @post.title %>
-  </h1>
-  <h3 class="post-body">
-    <%= @post.body %>
-  </h3>
-  <h4 class="post-subtitle">
-    <%= @post.summary %>
-  </h4>
-</a>
-<p class="post-meta">Posted by <a><%= link_to("#{@post.author.name}", about_path) %></a> one <%= @post.created_at.strftime('%B %d, %Y') %></p>
+  <div class="post-preview">
+    <h1 class="post-title">
+      <%= @post.title %>
+    </h1>
+    <h3 class="post-body">
+      <%= @post.body %>
+    </h3>
+    <h4 class="post-subtitle">
+      <%= @post.summary %>
+    </h4>
+  </a>
+  <p class="post-meta">Posted by <a><%= link_to("#{@post.author.name}", about_path) %></a> one <%= @post.created_at.strftime('%B %d, %Y') %></p>
 </div>
 </div>
 <hr/>
